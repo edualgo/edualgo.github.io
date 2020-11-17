@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>eduAlgo</title>
+  <meta content="An opensource organization making algorithmic learning easier in python" name="descriptison">
+  <meta content="python edualgo" name="keywords">
+
+  <!-- Favicons
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
+    <div class="container d-flex align-items-center">
+      <div class="contact-info mr-auto">
+        <ul>
+          <li><i class="icofont-envelope"></i><a href="mailto:contact@example.com">abhijit@edualgo.tech</a></li>
+        </ul>
+      </div>
+      <div class="cta">
+        <a href="#about" class="scrollto">About Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="#header" class="scrollto">eduAlgo</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="#header" class="logo mr-auto scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Developer Corner</a></li>
+          <li><a href="#team">Team</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li> -->
+          <li class="drop-down"><a href="#projects">Projects</a>
+            <ul>
+              <li><a href="https://github.com/eduAlgo/eduAlgo">eduAlgo Python Package</a></li>
+              <!-- <li class="drop-down"><a href="#">Deep Drop Down</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="https://github.com/eduAlgo/documentation">eduAlgo Package Documentation</a></li>
+              <li><a href="https://github.com/eduAlgo/edualgo-app-demo">eduAlgo Application</a></li>
+            </ul>
+          </li>
+          <li><a href="#footer">Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>eduAlgo</span></h2>
+          <p class="animate__animated animate__fadeInUp">We are an opensource organization hosting a few open-sourced projects related to Data structures and Algorithms in python. </p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Why Python ?</h2>
+          <p class="animate__animated animate__fadeInUp">Python is easy to use, powerful, and versatile, making it a great choice for beginners and experts alike. Python’s readability makes it a great first programming language, it allows you to think like a programmer and not waste time with confusing syntax.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Why Opensource ?</h2>
+          <p class="animate__animated animate__fadeInUp">Open source licensing encourages innovation through collaboration. Without it, many of the technologies we take for granted today would never have developed, or would be locked away behind patent law. The open source movement is the reason that technology has developed at such a breakneck pace for the past few decades.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-python"></i></div>
+              <h4 class="title"><a href="https://www.python.org/">Learn Python</a></h4>
+              <p class="description">This tutorial provides a comprehensive and in-depth introduction to the Python language. Python version 3, which is the latest and the correct one!</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-shape-polygon"></i></div>
+              <h4 class="title"><a href="https://www.hackerrank.com/domains/data-structures">Practise DSA</a></h4>
+              <p class="description">DS & Algorithms are the building blocks of software development, the more strong you are in DSA, the better programmer you becomes.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-category"></i></div>
+              <h4 class="title"><a href="https://github.com/eduAlgo">Checkout Projects</a></h4>
+              <p class="description">We have a few awesome projects on DS & Algo in python, don't forget to check them out on github once you got your basics clear.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-code-block"></i></div>
+              <h4 class="title"><a href="https://github.com/eduAlgo/eduAlgo/blob/master/CONTRIBUTING.md">Contribute</a></h4>
+              <p class="description">We are glad to have contributors for our projects, don't forget to send me a mail regarding your interest and we will get in touch with you.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Icon Boxes Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>We are an open-source organization focused on making algorithm learning easier for python developers especially
+             for the beginners by creating modules in the python package eduAlgo. Other than this, we are having a 
+             few opensource projects, which are participating in numerous of opensource programs as organizatiomn projects.
+            Not only this, we are in a process to design courses and modules for beginners to learn DSA in python.</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              What we have for you,
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i>An opensource community</li>
+              <li><i class="ri-check-double-line"></i>Teamwork, project development ethics</li>
+              <li><i class="ri-check-double-line"></i>A lot of learning</li>
+              <li><i class="ri-check-double-line"></i>Diving into the depth of Algorithm Design</li>
+              <li><i class="ri-check-double-line"></i>Maintaining clean, human-readable code</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              eduAlgo is made by Pythoneers for python developers, students and educators and is 100% OpenSource as long as you keep the <b>MIT License</b> attached without changing the statements or the copyright section inside the license documentations.
+              We have an aim to promote algorithm learning in python and opensource developement in parallel. We would be more than happy to have you as our contributor.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="owl-carousel clients-carousel">
+          <img src="assets/img/clients/fosshack.png" alt="">
+          <img src="assets/img/clients/pycon.png" alt="">
+          <img src="assets/img/clients/wocDSC.png" alt="">
+          <img src="assets/img/clients/swoc.png" alt="">
+          <img src="assets/img/clients/njack.png" alt="">
+          <img src="assets/img/clients/devscript.png" alt="">
+          <img src="assets/img/clients/bwlu.png" alt="">
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("assets/img/video.png");' data-aos="fade-right">
+            <a href="https://www.youtube.com/watch?v=j4A3OV8KJEQ" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
+
+            <div class="content">
+              <h3>eduAlgo is an <strong>opensource organization</strong></h3>
+              <p>
+                We promote opensource development by increasing the skill set of developers
+                anf giving them a chance to contribute in our very own projects. We also 
+                conduct time to time sessions on different technical advancements through 
+                opensource softwares.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> How do we support opensource ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                    <p>
+                      We have been a part of many opensource events like <b>FOSS Hack 20</b>, <b>PyCon India Devsprint 20</b>, <b>WoC 20(Winter of Code)</b> etc as a project organization,
+                      by mentoring the participants on opensource project development as well as tried to enhance related skills like writing clean code properly documenting code &
+                      software engineering best practises.
+                    </p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> How do we support algorithmic learning ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      Algorithm design is the best way to learn algorithms, we host a few projects on DSA in python, with proper docuementations. As well as we are organizing regular 
+                      coding competitions on HackerRank to support algoritmic learning. 
+                    </p>
+                  </div>
+                </li>
+
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Is there anyway to contribute in our projects ? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      We are one of the biggest supporter of contribution and anyone irrespective of any degree and level of experience are welcome to contribute in our projects any
+                      time of the year. Please feel free to get-in touch with us.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Developer Corner</h2>
+          <p>
+            We are very fond of developers out there, we want them to contribute and grow along with us. The contributions that our developers
+            have made previously are precious and we are glad to have them here.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <i class="bx bxl-github"></i>
+              <h4><a href="https://github.com/eduAlgo">Visit Github</a></h4>
+              <p>Checkout our github organization, you can be a part of the organization by contributing to our projects listed there.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <i class="bx bxl-python"></i>
+              <h4><a href="https://pypi.org/project/eduAlgo/">Checkout PyPI</a></h4>
+              <p>Checkout our PyPI(Python Packaging Index) page to learn more on our previous releases and to download <b>.tar</b> files.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class='bx bx-file'></i>
+              <h4><a href="https://edualgo.github.io/documentation/">Package Documentation</a></h4>
+              <p>Check our package documentation site in order to learn more on different modules and their structures. </p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class='bx bx-pen'></i>
+              <h4><a href="https://dev.to/edualgo">Write Blogs</a></h4>
+              <p>You may read/write a few of our articles and let us know the feedback.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class='bx bx-code'></i>
+              <h4><a href="https://www.hackerrank.com/edualgo-weekly">Coding Contests</a></h4>
+              <p>We organize regular contests on HackerRank, please don't forget to join there and test your programming skills.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <i class='bx bxs-face-mask'></i>
+              <h4><a href="#">Join Us</a></h4>
+              <p>Interns for opensource development as well as other posts like blog writing and graphic designing.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <!-- <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3>Call To Action</h3>
+            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section>End Cta Section -->
+
+    <!-- ======= Portfoio Section ======= -->
+    <!-- <section id="portfolio" class="portfoio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfoio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>End Portfoio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Team</h2>
+          <p>We have an awesome team of smart developers.</p>
+        </div>
+        <div class="section-title">
+          <h3>Core Team</h3>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/editor2.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Abhijit Tripathy</h4>
+                <span>Founder</span>
+                <p>I am a philanthropist, an entrepreneur and a strong believer of the opensource revolution.</p>
+                <div class="social">
+                  <a href="https://github.com/Abhijit2505"><i class='bx bxl-github'></i></a>
+                  <a href="https://www.linkedin.com/in/abhijit-tripathy-415912187/"><i class='bx bxl-linkedin-square'></i></a>
+                  <a href="https://www.instagram.com/the_insane_coder/"><i class='bx bxl-instagram'></i></a>
+                  <a href="https://dev.to/abhijit2505"><i class='bx bxl-dev-to'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <br>
+          <br>
+        </div>
+        <div class="section-title">
+          <h3>Contributors</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/pransh4.png" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Pransh Tiwari</h4>
+                <span>SDE 2, Amazon</span>
+                <p>He is a Software Development Engineer & a python enthusiast, who has added some useful code snippets during <b>HacktoberFest 20</b>.</p>
+                <div class="social">
+                  <a href="https://github.com/nyctophiliacme"><i class='bx bxl-github'></i></a>
+                  <a href="https://www.linkedin.com/in/pransh-tiwari/"><i class='bx bxl-linkedin-square'></i></a>
+                  <a href="https://twitter.com/Pransht"><i class='bx bxl-twitter'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="assets/img/yash2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Yash Bhawsar</h4>
+                <span>Software Engineer, Morgan Stanley</span>
+                <p>Yash is an experienced Software Engineer with a demonstrated history of working in the information technology and services industry. </p>
+                <div class="social">
+                  <a href="https://github.com/yash872"><i class='bx bxl-github'></i></a>
+                  <a href="https://www.linkedin.com/in/yashbhawsar872/"><i class='bx bxl-linkedin-square'></i></a>
+                  <!-- <a href="https://www.instagram.com/the_insane_coder/"><i class='bx bxl-twitter'></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <br>
+          <br>
+        </div>
+        <div class="section-title">
+          <h3>Interns</h3>
+        </div>
+        <div class="row">
+  
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <!-- <div class="pic"><img src="assets/img/editor2.jpeg" class="img-fluid" alt=""></div> -->
+              <div class="member-info">
+                <!-- <h4>Abhijit Tripathy</h4>
+                <span>Founder</span> -->
+                <p>We have a strong back support from our intern team that includes Python Developers, Frontend Developers,
+                  Flutter Developers writing a ton of codes for our organization, we heartly congratulate them for being selected as an intern 
+                  and being a part of so much learning.
+                </p>
+                <centre><a href="#" class="btn-learn-more">Learn More</a></centre>
+                <!-- <div class="social">
+                  <a href="https://github.com/Abhijit2505"><i class='bx bxl-github'></i></a>
+                  <a href="https://www.linkedin.com/in/abhijit-tripathy-415912187/"><i class='bx bxl-linkedin-square'></i></a>
+                  <a href="https://www.instagram.com/the_insane_coder/"><i class='bx bxl-instagram'></i></a>
+                  <a href="https://dev.to/abhijit2505"><i class='bx bxl-dev-to'></i></a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+      </section>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="projects" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>We create and maintain opensource projects.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Python</span>
+              <h3>Project 1</h3>
+              <h4><sup></sup>Python Package<span><br>eduAlgo</span></h4>
+              <ul>
+                <li>Opensourced</li>
+                <li>PyPI Published</li>
+                <li>DS & Algo</li>
+                <li>Documentation</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="https://github.com/eduAlgo/eduAlgo" class="btn-buy">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Dart/Flutter</span>
+              <h3>Project 2</h3>
+              <h4><sup></sup>Android Application<span><br>eduAlgo</span></h4>
+              <ul>
+                <li>Opensourced</li>
+                <li>Android/IOS Development</li>
+                <li>UI Designing</li>
+                <li>Documentation</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="https://github.com/eduAlgo/edualgo-app-demo" class="btn-buy">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <span class="advanced">Bootstrap</span>
+              <h3>Project 3</h3>
+              <h4><sup></sup>Reference Site<span><br>eduAlgo</span></h4>
+              <ul>
+                <li>Opensourced</li>
+                <li>Responsive Designing</li>
+                <li>UI Designing</li>
+                <li>Documentation</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="https://github.com/eduAlgo/documentation" class="btn-buy">View Project</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <!-- <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <!-- <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact Us</h2>
+        </div>
+
+        <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+
+          <div class="col-lg-5">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>Bilaspur, Chattisgarh, India</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>abhijittripathy99@gmail.com</p>
+              </div>
+
+            </div>
+
+          </div> -->
+
+          <!-- <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div> -->
+
+        <!-- </div>
+
+      </div>
+    </section>End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <!-- <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#header">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Developer Corner</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/eduAlgo/eduAlgo/blob/master/LICENSE.txt">License</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Projects</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/eduAlgo/eduAlgo">eduAlgo Python Package</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/eduAlgo/edualgo-app-demo">eduAlgo Android App</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/eduAlgo/documentation">Documentation Site</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Bilaspur <br>
+              Chattisgarh,India 495009<br><br><br>
+              <strong>Email:</strong> abhijittripathy99@gmail.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About eduAlgo</h3>
+            <p>We are an opensource organization hosting a few open-sourced projects related to Data structures and Algorithms in python.</p>
+            <div class="social-links mt-3">
+              <a href="https://www.linkedin.com/company/edualgo/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/eduAlgo" class="linkedin"><i class="bx bxl-github"></i></a>
+              <a href="https://dev.to/edualgo" class="linkedin"><i class="bx bxl-dev-to"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>eduAlgo 2020</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
