@@ -1373,9 +1373,17 @@ section {
 
 /*sponsers*/
 .sponsor-boxes {
-  padding-top: 0;
-  background-color: #fdf6f6;
-  padding-right: 5px;
+  padding-top: 20px;
+  background-color: #fff;
+  padding-right: 15px;
+}
+
+.sponser-img-fluid {
+  max-width: 100%;
+  height: auto;
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*--------------------------------------------------------------
