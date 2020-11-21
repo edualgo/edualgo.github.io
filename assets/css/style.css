@@ -1371,6 +1371,13 @@ section {
   color: #fff;
 }
 
+/*sponsers*/
+.sponsor-boxes {
+  padding-top: 0;
+  background-color: #fdf6f6;
+  padding-right: 5px;
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
