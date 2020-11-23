@@ -1176,9 +1176,397 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 10px;
-  background: #fff;
+  color:black;
+  background: white;
+}
+/*------------------intern work-------------*/
+.team .member {
+
+background: linear-gradient(180deg, rgb(131, 205, 235),rgb(16, 124, 167),rgb(67, 67, 230),rgb(7, 7, 168),rgb(2, 2, 58));
+  }
+/*--------------------content------------------*/
+ 
+.team .membercontant{
+  background-image: linear-gradient(to left,rgb(243, 168, 7),rgb(255, 115, 0),orangered);
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  color:white;
+  font-family:  sans-serif;
+  } 
+  .team .membercontant .pic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+  }
+  
+  .team .membercontant .pic img {
+    transition: ease-in-out 0.3s;
+  }
+  
+  .team .membercontant:hover img {
+    transform: scale(1.1);
+  }
+  
+  .team .membercontant .member-info {
+    padding-left: 30px;
+  }
+  
+  .team .membercontant h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .team .membercontant span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  .team .membercontant span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #bfe0fd;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .team .membercontant p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+  
+  .team .membercontant .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .team .membercontant .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #ecf6fe;
+    color: #8C52FF;
+  }
+  
+  .team .membercontant .social a i {
+    font-size: 16px;
+    margin: 0 2px;
+  }
+  
+  .team .membercontant .social a:hover {
+    background: #8C52FF;
+    color: #fff;
+  }
+  
+  .team .membercontant .social a + a {
+    margin-left: 8px;
+  }
+
+/*---------------------content end---------------*/
+
+.team .website{
+  background-image: linear-gradient(180deg,rgb(238, 206, 211),rgb(224, 140, 154),rgb(230, 116, 135),rgb(214, 50, 77),rgb(180, 12, 40),rgb(121, 5, 24));
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  font-family: sans-serif;
+  } 
+  .team .website .pic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+  }
+  
+  .team .website .pic img {
+    transition: ease-in-out 0.3s;
+  }
+  
+  .team .website:hover img {
+    transform: scale(1.1);
+  }
+  
+  .team .website .member-info {
+    padding-left: 30px;
+  }
+  
+  .team .website h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .team .website span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+  
+  .team .website span::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #bfe0fd;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .team .website p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+  }
+  
+  .team .website .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .team .website .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #ecf6fe;
+    color: #8C52FF;
+  }
+  
+  .team .website .social a i {
+    font-size: 16px;
+    margin: 0 2px;
+  }
+  
+  .team .website .social a:hover {
+    background: #8C52FF;
+    color: #fff;
+  }
+  
+  .team .website .social a + a {
+    margin-left: 8px;
+  }
+
+
+
+
+/*-----------------Forntend End----------------*/
+/*--------------================================================flutter==============------------*/
+.team .name {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  background-image: linear-gradient(135deg,rgb(238, 238, 221),rgb(228, 228, 143),rgb(233, 233, 90),rgb(186, 218, 139),rgb(162, 221, 74),rgb(120, 187, 20),rgb(29, 187, 29));
+  font-family:  sans-serif;
+  color:white;
+}
+.team .name .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
 }
 
+.team .name .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .name:hover img {
+  transform: scale(1.1);
+}
+
+.team .name .member-info {
+  padding-left: 30px;
+}
+
+.team .name h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.team .name span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .name span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #bfe0fd;
+  bottom: 0;
+  left: 0;
+}
+
+.team .name p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.team .name .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .name .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #ecf6fe;
+  color: #8C52FF;
+}
+
+.team .name .social a i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .name .social a:hover {
+  background: #8C52FF;
+  color: #fff;
+}
+
+.team .name .social a + a {
+  margin-left: 8px;
+}
+
+/*-----------------==========================================================flutter==================================------------------------/
+/--------------------------------python----------------------------*/
+
+.team .Developer {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  /background:white;/
+  color:white;
+  font-family: sans-serif;
+  background: linear-gradient(45deg, rgb(131, 205, 235),rgb(16, 124, 167),rgb(67, 67, 230),rgb(7, 7, 168),rgb(2, 2, 58));
+}
+.team .Developer .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.team .Developer .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .Developer:hover img {
+  transform: scale(1.1);
+}
+
+.team .Developer .member-info {
+  padding-left: 30px;
+}
+
+.team .Developer h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.team .Developer span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+  color:#fff;
+}
+
+.team .Developer span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #bfe0fd;
+  bottom: 0;
+  left: 0;
+}
+
+.team .Developer p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+.team .Developer .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .Developer .social a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #ecf6fe;
+  color: #8C52FF;
+}
+
+.team .Developer .social a i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .Developer .social a:hover {
+  background: #8C52FF;
+  color: #fff;
+}
+
+.team .Developer .social a + a {
+  margin-left: 8px;
+}
+
+
+
+/*----------------------------------------------python------------------------/
+/-----------------intern portion end------------*/
 .team .member .pic {
   overflow: hidden;
   width: 180px;
@@ -1201,7 +1589,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #8C52FF;
+  color: #fff;
 }
 
 .team .member span {
@@ -1371,7 +1759,7 @@ section {
   color: #fff;
 }
 
-/*sponsers*/
+/sponsers/
 .sponsor-boxes {
   padding-top: 20px;
   background-color: #fff;
