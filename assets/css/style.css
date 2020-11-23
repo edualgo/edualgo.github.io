@@ -1182,7 +1182,7 @@ section {
 /*------------------intern work-------------*/
 .team .member {
 
-background: linear-gradient(180deg, rgb(131, 205, 235),rgb(16, 124, 167),rgb(67, 67, 230),rgb(7, 7, 168),rgb(2, 2, 58));
+background: white;
   }
 /*--------------------content------------------*/
  
@@ -1589,7 +1589,7 @@ background: linear-gradient(180deg, rgb(131, 205, 235),rgb(16, 124, 167),rgb(67,
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #fff;
+  color: #8C52FF;
 }
 
 .team .member span {
