@@ -730,6 +730,10 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
+.clients{
+  background-image:url("assets/img/hero-bg.png");
+  height:100px;
+}
 .clients .owl-item {
   display: flex;
   justify-content: center;
