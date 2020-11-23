@@ -1280,7 +1280,7 @@ background: white;
 /*---------------------content end---------------*/
 
 .team .website{
-  background-image: linear-gradient(180deg,rgb(238, 206, 211),rgb(224, 140, 154),rgb(230, 116, 135),rgb(214, 50, 77),rgb(180, 12, 40),rgb(121, 5, 24));
+  background-image: linear-gradient(315deg,rgb(236, 135, 150),rgb(243, 96, 121),rgb(240, 79, 105),rgb(214, 50, 77),rgb(180, 12, 40),rgb(121, 5, 24));
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
