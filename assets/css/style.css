@@ -730,6 +730,60 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
+
+.mo-holder{
+	height:200px;
+	width:100%;
+	overflow:hidden;
+	z-index:0;
+}
+.mo-slider{
+	height:80px;
+	width:1600px;;
+	position:relative;
+	animation-name:mo_slide;
+	animation-duration:30s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate-reverse;
+	animation-play-state:running;
+
+}
+.mo{
+	height:50px;
+	width:160px;
+	margin:20px;
+	float:left;
+  display: inline;
+	position:relative;
+	z-index:1000;
+	transform-style:preserve-3d;
+  opacity:0.5;
+  background-color:white;
+}
+.mo:hover{
+	filter:none;
+  opacity:1.0;
+  transform:scale(1.2);
+}
+@keyframes mo_slide{
+	0%{right:0px;}
+	10%{right:100px;}
+	20%{right:200px;}
+	30%{right:300px;}
+	40%{right:400px;}
+	50%{right:400px;}
+	60%{right:300px;}
+	70%{right:200px;}
+	80%{right:100px;}
+	90%{right:0px;}
+	100%{right:0px;}
+}
+
+
+/*.clients{
+  background-image:url("assets/img/hero-bg.png");
+  height:100px;
+}
 .clients .owl-item {
   display: flex;
   justify-content: center;
@@ -764,7 +818,7 @@ section {
 .clients .owl-dot.active {
   background-color: #8C52FF !important;
 }
-
+*/
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
