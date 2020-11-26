@@ -731,6 +731,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 
+
 .mo-holder{
 	height:200px;
 	width:100%;
@@ -739,7 +740,7 @@ section {
 }
 .mo-slider{
 	height:80px;
-	width:1600px;;
+	width:1950px;;
 	position:relative;
 	animation-name:mo_slide;
 	animation-duration:30s;
@@ -749,32 +750,33 @@ section {
 
 }
 .mo{
-	height:50px;
-	width:160px;
+	height:60px;
+	width:200px;
 	margin:20px;
+	padding:0px 40px;
 	float:left;
-  display: inline;
+	display: inline;
 	position:relative;
 	z-index:1000;
 	transform-style:preserve-3d;
-  opacity:0.5;
-  background-color:white;
+	opacity:0.5;
+	background-color:white;
 }
 .mo:hover{
 	filter:none;
   opacity:1.0;
-  transform:scale(1.2);
+  transform:scale(1.5);
 }
 @keyframes mo_slide{
 	0%{right:0px;}
-	10%{right:100px;}
-	20%{right:200px;}
-	30%{right:300px;}
-	40%{right:400px;}
-	50%{right:400px;}
-	60%{right:300px;}
-	70%{right:200px;}
-	80%{right:100px;}
+	10%{right:210px;}
+	20%{right:420px;}
+	30%{right:630px;}
+	40%{right:680px;}
+	50%{right:680px;}
+	60%{right:630px;}
+	70%{right:420px;}
+	80%{right:210px;}
 	90%{right:0px;}
 	100%{right:0px;}
 }
