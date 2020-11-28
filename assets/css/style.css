@@ -730,39 +730,54 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .owl-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 60px;
-}
 
-.clients .owl-item img {
-  width: 200%;
-  opacity: 0.5;
-  transition: 0.3s;
+.mo-holder{
+	height:200px;
+	width:100%;
+	overflow:hidden;
+	z-index:0;
 }
+.mo-slider{
+	height:80px;
+	width:1950px;
+	position:relative;
+	animation-name:mo_slide;
+	animation-duration:30s;
+	animation-iteration-count:infinite;
+	animation-direction:alternate-reverse;
+	animation-play-state:running;
 
-.clients .owl-item img:hover {
-  opacity: 1;
 }
-
-.clients .owl-nav, .clients .owl-dots {
-  margin-top: 10px;
-  text-align: center;
+.mo{
+	height:60px;
+	width:200px;
+	margin:20px;
+	padding:0px 40px;
+	float:left;
+	display: inline;
+	position:relative;
+	z-index:1000;
+	transform-style:preserve-3d;
+	opacity:0.5;
+	background-color:white;
 }
-
-.clients .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
+.mo:hover{
+	filter:none;
+  opacity:1.0;
+  transform:scale(1.5);
 }
-
-.clients .owl-dot.active {
-  background-color: #8C52FF !important;
+@keyframes mo_slide{
+	0%{right:0px;}
+	10%{right:210px;}
+	20%{right:420px;}
+	30%{right:630px;}
+	40%{right:680px;}
+	50%{right:680px;}
+	60%{right:630px;}
+	70%{right:420px;}
+	80%{right:210px;}
+	90%{right:0px;}
+	100%{right:0px;}
 }
 
 /*--------------------------------------------------------------
