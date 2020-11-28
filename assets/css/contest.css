@@ -1,0 +1,49 @@
+.round {
+    border: 2px solid  #8C52FF;
+    border-radius: 5px;
+  }
+  .accordion {
+    background-color: #fff ;
+    color: #7288a2;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .active, .accordion:hover {
+    color:#8C52FF;
+  }
+  
+  .accordion:after {
+    /* content: '\002B'; */
+    color: #9372a2;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  /* .active:after {
+    content: "\2212";
+  } */
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'Varela Round', sans-serif;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .btn-primary-mod {
+    color: white;
+    background-color: #8C52FF;
+    border-color: #8C52FF;
+  }
+  
