@@ -65,16 +65,16 @@ card float
 }
 
 .at-floating-card > .card > .card-body > .card-text{
-  font-size: 12px;
+  font-size: 13px;
   font-family: monospace;
   /* animation: blink 1s linear infinite; */
   color: #8C52FF;
 }
-@keyframes blink{
+/* @keyframes blink{
 0%{opacity: 0;}
 50%{opacity: .5;}
 100%{opacity: 1;}
-}
+} */
 
 
 /* animation of floating card */
