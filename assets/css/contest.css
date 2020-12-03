@@ -67,7 +67,7 @@ card float
 .at-floating-card > .card > .card-body > .card-text{
   font-size: 12px;
   font-family: monospace;
-  animation: blink 1s linear infinite;
+  /* animation: blink 1s linear infinite; */
   color: #8C52FF;
 }
 @keyframes blink{
