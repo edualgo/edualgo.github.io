@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+nav{
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    opacity: 0;
+    animation: naventry 1s ease forwards 2s;
+
+}
+
+@keyframes naventry {
+    from{
+        transform: translateY(-20vh);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
+.dropdown-menu{
+    background-color: rgba(255, 255, 255, .15)!important;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+}
+
+.navbar-brand{
+    color: #8950FB;
+    font-weight: bold;
+    position: absolute;
+}
+
+.nav-link{
+    color: rgb(255, 255, 255);
+}
+
+.navbar-brand:hover{
+    color: #8950FB;
+    letter-spacing: 0.3rem;
+}
+
+.nav-link:hover{
+    color: #C2FB50;
+}
+
+.hamburger{
+    width: 25px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+nav .btn{
+    display: none;
+}
+
+#intro{
+    padding: 20vh 10vh;
+    min-height: 100vh;
+    background-image:url('../img/back-bg.png') ;
+    
+}
+
+#logo{
+    width: 50vw;
+    margin: -2vh;
+}
+
+#logo path{
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    animation: line-anim 2s ease-in forwards 1s;
+}
+
+@keyframes line-anim {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+.context{
+    animation: textfade 1s ease forwards 2s;
+    opacity: 0;
+    color: white;
+}
+
+@keyframes textfade {
+    to{
+        opacity: 0.8;
+    }
+}
+
+#computerImg{
+    animation: imgEntry 4s ease forwards 4s;
+    opacity: 0;
+    margin-top: 5vh;
+}
+
+@keyframes imgEntry {
+    to{
+        opacity: 1;
+
+    }
+}
+
+#button1{
+    animation: button1entry 2s ease forwards 1s;
+    opacity: 0;
+    background-color: #8950FB;
+    color: white;
+}
+
+@keyframes button1entry {
+    from{
+        transform: translateY(20vh);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+}
+
+#button2{
+    animation: button2entry 2s ease forwards 1s;
+    opacity: 0;
+    background-color: #8950FB;
+    color: white;
+}
+
+@keyframes button2entry {
+    from{
+        transform: translateX(20vh);
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#button1:hover{
+    background-color: #000;
+    color: #C2FB50;
+    font-weight: bold;
+}
+
+#button2:hover{
+    background-color: #000;
+    color: #C2FB50;
+    font-weight: bold;
+}
+
+#about{
+    background-image: linear-gradient(to bottom, #000000, #1b1b1b, #1d1c1c );
+    padding: 10vh;
+}
+
+.heading{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #8950FB ;
+    font-size: 3rem;
+}
+
+.counter{
+    margin: 3rem 0;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+table{
+    width: 100%; 
+}
+
+.count:hover{
+    transform: translateY(-2rem);
+    color: #41FFD4;
+}
+video {
+    max-width: 100%;
+    height: auto;
+  }
+
+#videoSec{
+    background: #141E30;  /* fallback for old browsers */
+background: linear-gradient(to bottom,#1d1c1c,#171717); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: whitesmoke;
+}
+
+#matter{
+    padding:20vh;
+    text-align: right;
+    margin-left: 50vh;
+}
+
+#bigCircle{
+        position: absolute; 
+        width: 30vw;
+        height: 60vw;
+        border-bottom-right-radius: 60vw;
+        border-top-right-radius: 60vw;
+        background-image: linear-gradient(to left,  #8950FB , #632ece, #471b9f ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+transform: translateY(-100%);
+        z-index: 1;
+
+}
+
+
+
+#YTvid{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    z-index: 2;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+}
+
+iframe{
+    width: 50vw;
+    height: 28.125vw;
+}
+
+#conference{
+    padding: 10vh 0;
+    background: #0c0c08;  /* fallback for old browsers */
+background: linear-gradient(to bottom,#000,#171717,#1e1e1e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+} 
+
+
+.carousel-item{
+    padding: 10vh;
+}
+
+.card{
+    background-color: transparent!important;
+    border: none!important;
+}
+
+.card-body{
+    color: whitesmoke;
+}
+
+#callToAction{
+    padding: 20vh;
+    text-align: center;
+    min-height: 60vh;
+    background:#1e1e1e;  /* fallback for old browsers */
+    background: linear-gradient(to bottom,#1e1e1e,#171717,#111111,#000000);
+    color: whitesmoke;
+}
+
+#Action{
+    margin-top: 10vh;
+    background-color: yellow;
+    padding: 2vh 10vh;
+    font-weight: bold;
+    color: black;
+}
+
+#Action:hover{
+    background: #FF512F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer{
+    background-color: black;
+    color: #8950FB;
+    padding: 5vh;
+    border-bottom:5px solid #8950FB;
+    text-align: center;
+}
+footer a {
+    color: inherit; 
+  }
+
+footer a:hover{
+      color: #C2FB50;
+}
+
+#companyName{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar-brand{
+    position: relative;
+}
+
+nav .btn{
+    display: block;
+}
+    
+#logo{
+    width: 100%;
+    margin: 0;
+    margin-bottom: -8vh;
+}
+
+
+#intro{
+    padding: 5vh;
+}
+
+#button2{
+    margin-top: 3vh;
+}
+
+@keyframes button1entry {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes button2entry {
+    to{
+        opacity: 1;
+    }
+}
+
+
+#about{
+    text-align: center;
+    padding: 10vh 3vh;   
+}
+
+.counter{
+    padding: 2vh;
+}
+
+
+#matter{
+    text-align: center;
+    margin: 0%;
+    padding: 10vh 2vh;
+}
+
+.heading{
+    font-size: 2rem;
+}
+#YTvid{
+    padding: 5vh 2vh;
+    height: 100%;
+}
+
+iframe{
+    width: 96vw;
+    height: 54vw;
+}
+
+#bigCircle{
+    display: none;
+}
+
+#conference{
+    padding: 0;
+    padding-top: 6vh;
+}
+.carousel-item{
+    padding: 0;
+    margin-top: 6vh;
+}
+
+.card-img{
+    height: 30vh;
+    width: auto!important;
+}
+
+#callToAction{
+    padding: 10vh 2vh;
+
+}
+#Action{
+    margin-top: 10vh;
+    padding: 2vh;;
+}
+
+footer .col-sm{
+    padding: 5vh 0;
+}
+
+}
+
+. row-modified {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
