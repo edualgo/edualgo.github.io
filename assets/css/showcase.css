@@ -263,6 +263,13 @@ background: linear-gradient(to bottom,#000,#171717,#1e1e1e); /* W3C, IE 10+/ Edg
     background: linear-gradient(to bottom,#1e1e1e,#171717,#111111,#000000);
     color: whitesmoke;
 }
+#callToAction2{
+    padding: 20vh;
+    text-align: center;
+    min-height: 60vh;
+    background:#000000;  /* fallback for old browsers */
+    color: whitesmoke;
+}
 
 #Action{
     margin-top: 10vh;
