@@ -379,6 +379,11 @@ iframe{
 #bigCircle{
     display: none;
 }
+.sponser-img-fluid {
+    max-width: 100%;
+    height: auto;
+    padding-top: 60px;
+}
 
 #conference{
     padding: 0;
