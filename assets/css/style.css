@@ -1777,6 +1777,8 @@ background: white;
 /sponsers/
 
 .sponsor-boxes {
+  display: flex;
+  justify-content: left;
   padding-top: 20px;
   background-color:#FFFFFF
   padding-right: 15px;
@@ -1789,6 +1791,14 @@ background: white;
   padding-left: 10px;
   padding-right: 10px;
   
+}
+.cont{
+  display: flex;
+  justify-content: space-between;
+}
+.center{
+  text-align: center;
+  align-self: center;
 }
 .bg{
   background-color: rgba(232, 219, 233, 0.623);
@@ -1805,6 +1815,9 @@ background: white;
   margin: 2px;
   
 }
+.bgs{
+  background-color: #bfe0fd;
+}
 .right {
   position: absolute;
   right: 0px;
@@ -1814,22 +1827,23 @@ background: white;
   font-family: "Raleway", sans-serif;
   font-size: x-large;
 }
-
-.btn:hover span {
-  padding-right: 25px;
+.btn1{
+  transition-duration: 0.4s;
+  display: inline-block;
+  background-color: whitesmoke;
+  border-color:purple;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin: 2px;
 }
 
-.btn:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-.btn span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.btn1:hover {
+  background-color:plum;
+  
+  
 }
 
 
