@@ -1775,9 +1775,12 @@ background: white;
 }
 
 /sponsers/
+
 .sponsor-boxes {
+  display: flex;
+  justify-content: left;
   padding-top: 20px;
-  background-color: #fff;
+  background-color:#FFFFFF
   padding-right: 15px;
 }
 
@@ -1787,7 +1790,68 @@ background: white;
   padding-top: 60px;
   padding-left: 10px;
   padding-right: 10px;
+  
 }
+.sponser-img-fluid-mod {
+  max-width: 100%;
+  height: auto;
+  padding-top: 40px;
+}
+.cont{
+  display: flex;
+  justify-content: space-between;
+}
+.center{
+  text-align: center;
+  align-self: center;
+}
+.bg{
+  background-color: rgba(232, 219, 233, 0.623);
+}
+.btn{
+  display: inline-block;
+  background-color: #9b24e0;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px 32px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+  
+}
+.bgs{
+  background-color: #bfe0fd;
+}
+.right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  font-size: x-large;
+}
+.btn1{
+  transition-duration: 0.4s;
+  display: inline-block;
+  background-color: whitesmoke;
+  border-color:purple;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.btn1:hover {
+  background-color:plum;
+  
+  
+}
+
+
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
@@ -2955,5 +3019,39 @@ background: white;
   .testimonials .testimonial-item .testimonial-img {
     position: static;
     left: auto;
+  }
+}
+.column-left {
+  float: left;
+  width: 50%;
+}
+.column-left-mod {
+  padding-left: 10%;
+}
+.column-right {
+  float: center;
+  width: 50%;
+}
+.sponser-right{
+  padding-top:10%;
+  padding-left:30%;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .column-left {
+    width: 100%;
+  }
+  .column-right {
+    width: 100%;
+  }
+  .sponser-right{
+    padding-top:10%;
+    padding-left:20%;
+    align-items: center;
+  }
+  .sponser-img-fluid-mod {
+    max-width: 100%;
+    height: auto;
+    padding:5%;
   }
 }
